@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,23 +19,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RrR-QO-6Rf" userLabel="Red View">
-                                <rect key="frame" x="0.0" y="206" width="143" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RrR-QO-6Rf" userLabel="Red View">
+                                <rect key="frame" x="0.0" y="0.0" width="125" height="667"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QID-6N-22T" userLabel="Green View">
-                                <rect key="frame" x="16" y="364" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9KU-bB-Irv" userLabel="Blue View">
-                                <rect key="frame" x="119" y="70" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9KU-bB-Irv" userLabel="Blue View">
+                                <rect key="frame" x="133" y="450" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QID-6N-22T" userLabel="Green View">
+                                <rect key="frame" x="133" y="46" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QID-6N-22T" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="CMo-z1-5si"/>
+                            <constraint firstItem="RrR-QO-6Rf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IBQ-Yv-KGS"/>
+                            <constraint firstItem="QID-6N-22T" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="2:3" id="LCd-7y-EUH"/>
+                            <constraint firstItem="9KU-bB-Irv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Q9J-VE-geV"/>
+                            <constraint firstItem="QID-6N-22T" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="W3A-JA-Mx3"/>
+                            <constraint firstItem="9KU-bB-Irv" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="cTV-j4-tGH"/>
+                            <constraint firstItem="RrR-QO-6Rf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="eUG-Oa-dbz"/>
+                            <constraint firstItem="9KU-bB-Irv" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="iD7-AV-Lg1"/>
+                            <constraint firstItem="RrR-QO-6Rf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="los-H5-sWB"/>
+                            <constraint firstItem="9KU-bB-Irv" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="2:3" id="o0K-BD-6cO"/>
+                            <constraint firstItem="QID-6N-22T" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="tGM-XE-wWC"/>
+                            <constraint firstItem="RrR-QO-6Rf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="wTR-lb-gP5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
